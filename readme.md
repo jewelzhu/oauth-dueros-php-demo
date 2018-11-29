@@ -21,16 +21,20 @@
 6. 将你的网站信息填写到dueros的智能家居技能配置中
 
     授权地址：https://your.domain.name/authorize.php
+    
     Client_Id: testclient
+    
     Token地址： https://your.domain.name/token.php
+    
     ClientSecret: testpass
+    
     WebService: https://your.domain.name/bot.php
 
 7. 为dueros写入一条oauth信息
 
     INSERT INTO oauth_clients (client_id, client_secret, redirect_uri) VALUES ("testclient", "testpass", "https://xiaodu.baidu.com/saiya/auth/xxxxxxxxxxxxx");
 
-8. 在dueros配置页点击"保存"，"授权"
+8. 在dueros配置页点击"保存"，"授权"然后输入一个用户名并点击确认
 
 9. 在dueros测试页面或小度音箱上可以测试 "发现设备"，"打开吸顶灯", "关闭吸顶灯"灯指令啦
 
